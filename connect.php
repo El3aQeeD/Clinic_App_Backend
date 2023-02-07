@@ -10,7 +10,7 @@ try {
 
     $con = new PDO($dsn , $user , $pass , $option ); 
     $con->setAttribute(PDO::ATTR_ERRMODE , PDO::ERRMODE_EXCEPTION) ;
-    include 'helperfunc.php';
+    include 'helperFunction.php';
 
 
 }catch(PDOException $e){
