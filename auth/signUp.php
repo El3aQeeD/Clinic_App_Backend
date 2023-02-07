@@ -9,7 +9,7 @@ $phone= filterRequest("phone");
 $userTypeId=1;
 
 
-$stmt= $con->prepare("INSERT INTO user (`name`,email,`password`,`phone`,`user_type_id`) VALUES (?,?,?,?)");
+$stmt= $con->prepare("INSERT INTO user (`name`,email,`password`,`phone`,`user_type_id`) VALUES (?,?,?,?,?)");
 $stmt->execute(array($username,$email,$password,$phone,$userTypeId));
 $count=$stmt->rowCount();
 
